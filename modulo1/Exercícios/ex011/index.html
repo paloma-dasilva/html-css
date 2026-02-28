@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+
+    <P>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do navegador.</P>
+<p>
+    A tag PICTURE permite criar regras condicionais, varias "sources" de uma imagem de acordo com o tamanho da tela.
+</p>
+
+    <picture>
+      <source media="(max-width:750px )" srcset="imagens/p.png">
+        <source media="(max-width: 1050px)" srcset="imagens/m.png">
+   <img src="imagens/g.png" alt="Imagem flexivel">
+
+    </picture>
+<br>
+    <h1>Reproduzindo Áudio</h1>
+<p>Utilize a tag "audio source" para testar diferentes tipos de arquivo do audio a ser reproduzido. Assim como nas imagens dinâmicas, a ordem importa.</p>
+<!--MP3 (mpeg) WAV OGG-->
+<p><b>Aviso</b>: o tipo WAV é o mais pesado, melhor evitar.</p>
+
+<audio preload="metadata" controls loop>
+    <source src="midia/cocktail-lounge.mp3" type="audio/mpeg">
+    <source src="midia/cocktail-lounge.mp3" type="audio/ogg">
+    <source src="midia/cocktail-lounge.mp3" type="audio/WAV">
+        <p>Infelizmente seu navegador não consegue reproduzir àudio.
+            <a href="midia/cocktail-lounge.mp3" download="cocktail-lounge">Clique aqui para baixar o arquivo MP3.</a>
+        </p>
+  
+</audio>
+
+   <p>
+            <a href="midia/cocktail-lounge.mp3">Clique aqui para baixar o arquivo MP3.</a>
+    </p>
+
+<h1>Vídeos</h1>
+
+</body>
+</html>
