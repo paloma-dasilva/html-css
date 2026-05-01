@@ -17,6 +17,7 @@ table {
     thead {
         background-color: #313131;
         color: white;
+
     }
 
     tr {
@@ -27,6 +28,10 @@ table {
             padding: 10px;
 
         }
+    }
+
+    tbody tr:nth-child(2n) {
+        background-color: aliceblue;
     }
 
     .numero {
@@ -42,6 +47,7 @@ table {
     <!---
     ANATOMIA PARA TABELAS GRANDES
     TABLE
+        CAPTION (LEGENDA)
         THEAD
             TR, TD, TH
         TBODY
@@ -51,10 +57,11 @@ table {
     -->
 
     <table>
+        <caption>População dos Estados Brasileiros</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
 
@@ -93,7 +100,7 @@ table {
 
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                
                     <td class="numero"><strong>0000</strong></td>
                
