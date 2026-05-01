@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escopo de grupos</title>
+
+    <style>
+        table {
+            width: 600px;
+            border: 1px solid black;
+            border-collapse: collapse;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+            tr td, th {
+                border: 1px solid black;
+                padding: 10px;
+                text-align: center;
+            }
+
+            .titulo {
+                background-color: rgba(49, 49, 49, 0.068);
+                font-weight: bold;
+            }
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th class="titulo" scope="col">Grupos</th>
+                <th class="titulo" scope="col">Nomes</th>
+                <th colspan="3" class="titulo" scope="colgroup">Filmes</th>
+            </tr>
+        </thead>
+
+        <tr>
+            <th rowspan="3" class="titulo" scope="rowgroup">Mulheres</th>
+            <td>Ana Maria Santos</td>
+            <td>Alien</td>
+            <td>Rambo</td>
+            <td>Vingadores</td>
+        </tr>
+
+        <tr>
+            <td>Beatriz Souza</td>
+            <td>Hulk</td>
+            <td>Inception</td>
+            <td>Batman</td>
+        </tr>
+
+        <tr>
+            <td>Claudia Melo</td>
+            <td>Oblivion</td>
+            <td>Matrix</td>
+            <td>Big Hero</td>
+        </tr>
+
+        <tr>
+            <th rowspan="3" class="titulo" scope="rowgroup">Homens</th>
+            <td>Bruno Medonça</td>
+            <td>Intocáveis</td>
+            <td>Amnésia</td>
+            <td>Gladiador</td>
+        </tr>
+
+        <tr>
+            <td>Daniel Lourenço</td>
+            <td>Wall-E</td>
+            <td>Oldboy</td>
+            <td>Dangal</td>
+        </tr>
+
+        <tr>
+            <td>Fabiano Mota</td>
+            <td>Star Wars 5</td>
+            <td>Taxi Driver</td>
+            <td>Toy Story</td>
+        </tr>
+
+        <tfoot>
+            <tr>
+                <th>Total</th>
+                <td colspan="4" scope="row">6 pessoas</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+</body>
+</html>
